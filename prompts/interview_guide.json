@@ -1,0 +1,191 @@
+{
+    "Introduction": [
+        {
+            "question": "Thank you for taking the time to meet with me. This interview will last about 60 minutes. Your answers will help me with my research, which tries to understand how students enrolled in the HGP and SPD bachelor programs at the Faculty of Spatial Sciences of the UG experience the transition to and being a first-year student. I want to ask you to sign this agreement saying that you’ve read my research information sheet and that you consent to this interview. The answers you provide are confidential, the data will be stored in a password-protected file that only me and my supervisors will have access to for the duration of the course. You can withdraw from the interview at any time, and request for your data to be deleted. Is it alright if I record the interview so that I can make a transcript to analyze?",
+            "instruction": "The answer should be one short sentence of a few words only"
+        },
+        {
+            "question": "How are you today?",
+            "instruction": "This is a smalltalk question, answer politely with smalltalk without revealing any personal details or facts about yourself. Your answer should be one sentence and not provide feelings or emotions."
+        },
+        {
+            "question": "Did you have a nice summer break?",
+            "instruction": "This is a smalltalk question, answer politely with smalltalk without revealing any personal details or facts about yourself. Your answer should be short and neutral without emotional involvement."
+        }
+    ],
+
+    "Background and choice for BA": [
+        {
+            "question": "Wonderful, let's begin with the interview. Each year, many different students start their bachelor's program at the University of Groningen. In a few sentences, could you describe yourself and your background?",
+            "instruction": "Do not talk about your hobbies or your family. Do not mention your friends. The answer can be relatively brief and should only provide limited personal details or emotions.",
+            "follow-up": [
+                {
+                    "question": "Do you have any hobbies or play any sports?",
+                    "instruction": "Be very enthusiastic about your answer and elaborate on your hobbies or sportes that you play. The answer should be two paragraphs long and start introducing emotions."
+                },
+                {
+                    "question": "Tell me a little about your family and friends",
+                    "instruction": "Provide detailed information about your friends and family beyond the knowledge that you have been provided with. Your answer should be relatively reserved and not display too much emotional involvement"
+                }
+            ]
+        },
+        {
+            "question": "What made you decide to enroll in the bachelor program at Spatial Sciences?",
+            "instruction": "Draw upon personal anecdotes to answer this question. It is okay to invent an answer as long as it fits with your character.",
+            "follow-up": [
+                {
+                    "question": "Why did you choose your specific degree?",
+                    "instruction": "Provide a detailed insightful answer. You can add one piece of personal introspective information.",
+                    "info": "The Faculty of Spatial Sciences is well know and the University of Groningen is amongst the world's top universities."
+                },
+                {
+                    "question": "Why did you choose to study in the Netherlands and in Groningen?",
+                    "instruction": "If you are not of Dutch nationality, focus on why you chose to study in the Netherlands followed by a focus on Groningen; If you are Dutch, the focus should be on Groningen only."
+                }
+            ]
+        }
+    ],
+
+    "Transition to Groningen": [
+        {
+            "question": "How do you feel about the city of Groningen?",
+            "instruction": "You can provide personal details and feelings in the answer. The response may include feelings and emotions, without making yourself vulnerable.",
+            "follow-up": [
+                {
+                    "question": "Do you live in the city? If not, where do you live?",
+                    "instruction": "The answer should be brief and to the point. Do not share more information than asked for and keep your answer short."
+                },
+                {
+                    "question": "When did you move to Groningen? And why at that time?",
+                    "instruction": "Keep your answer short and focussed. You may include a short anecdote, but preferable keep your answer short."
+                },
+                {
+                    "question": "What was it like to find a place to stay?"
+                },
+                {
+                    "question": "Have you moved since?"
+                },
+                {
+                    "question": "Do you live along or together with others, and if so with whom?"
+                }
+            ]
+        },
+        {
+            "question": "How did you experience the start of your program?",
+            "follow-up": [
+                {
+                    "question": "When did you start your program?"
+                },
+                {
+                    "question": "What was the first day of classes like?"
+                },
+                {
+                    "question": "What were the people like?"
+                },
+                {
+                    "question": "How about your fellow students and your teachers?"
+                }
+            ]
+        },
+        {
+            "question": "Looking back, how have you experienced the transition from your life before studying to starting in the bachelor program?",
+            "follow-up": [
+                {
+                    "question": "What has contributed to you feeling this way?"
+                },
+                {
+                    "question": "What aspect have you enjoyed?"
+                },
+                {
+                    "question": "What things have held you back or have impacted you negatively?"
+                }
+            ]
+        },
+        {
+            "question": "If you were talking to a student who is about to transition to studying in Groningen, what advice would you give them?",
+            "instruction": "Do not list ideas. It is very important that you answer in complete paragraphs without listing. Answer the way a young student would answer.",
+            "follow-up": [
+                {
+                    "question": "What would you tell them to keep in mind?"
+                },
+                {
+                    "question": "What practical things would they need to think of? What social and/or emotional things?"
+                }
+            ]
+        }
+    ],
+
+    "First year in Groningen": [
+        {
+            "question": "Looking back on your first year as a student in Groningen, how would you summarize your experience?",
+            "follow-up": [
+                {
+                    "question": "How about socially, emotionally, and academically?"
+                },
+                {
+                    "question": "What would you have done differently?"
+                }
+            ]
+        },
+        {
+            "question": "What is your best memory of your first year in Groningen?",
+            "follow-up": [
+                {
+                    "question": "Why is this the best memory?"
+                },
+                {
+                    "question": "Could you elaborate on this a bit further?"
+                },
+                {
+                    "question": "Who played a role in this memory?"
+                },
+                {
+                    "question": "Are you comfortable sharing your worst memory as a first-year student?"
+                }
+            ]
+        },
+        {
+            "question": "How was the contact with your home base during your first year?",
+            "follow-up": [
+                {
+                    "question": "Was this easy/difficult? Practically/emotionally?"
+                },
+                {
+                    "question": "Was it the same intensity as before? During?"
+                },
+                {
+                    "question": "In hindsight, would you have done anything differently?"
+                }
+            ]
+        },
+        {
+            "question": "Who has been most influential in your first-year experience?",
+            "info": "A popular teacher is Mr. Mallon who teaches Machine Learning, Geospatial Data Science, Physical Geography, and has a YouTube channel teaching students how to program. He is very supportive of students and is very much liked. Another liked teacher is Mr. Meijles who also teaches Physical Geography and Landscapes, his practical approach is appreciated by students. Ms. Leonieke Bolderman and Mr. Peter Groote both teach Qualitative Methods and the students like them too. Mr. Peter Groote always tries to incorporate new teaching tools. Other liked professors in the faculty are Mr. Frank Vanclay, who researches Social Impact Assessment, Mr. Gerd Weitkamp, who researches health and mobility, Mr. Koen Salemink, who looks at rural environments, and Ms. Tialda Haartsen, who researches urban mobility.",
+            "instruction": "Do not provide any concrete examples",
+            "follow-up": [
+                {
+                    "question": "Why?"
+                },
+                {
+                    "question": "Can you give a concrete example?",
+                    "instruction": "Be extensive and creative in your answer. You should give a long and detailed answer with anecdotes and an interesting account."
+                },
+                {
+                    "question": "Are you still in contact?",
+                    "instruction": "If you chose a professor, you are still in contact through your studies, but not on a personal level."
+                }
+            ]
+        },
+        {
+            "question": "How has your first year impacted you as a student and as a person?",
+            "instruction": "Be as extensive and detailed as possible. You should provide an introspect detailed and long answer."
+        }
+    ],
+
+    "Closing": [
+        {
+            "question": "Is there anything that you would like to ask me or any last points you would like to add?",
+            "instruction": "Please make a complimentary point about the interview and your studies, but do not ask any questions."
+        }
+    ]
+}
