@@ -1,22 +1,20 @@
+from interviews.guide_engine import InterviewGuideEngine
+from interviews.formatter import format_interview
 from model.persona import Persona
-from chatbot.llm import create_interview_data
-from Interviews.formatter import format_interview
-import json
+from llm.llm import create_interview_data
+from database.mongo import write_interview_to_mongo
 
 
-interview_guide = ""
-with open('./prompts/interview_guide.json', 'r', encoding='utf-8') as file:
-    interview_guide = json.load(file)
+interview_engine = InterviewGuideEngine('prompts/interview_guide.json')
 
-# Create persona
-for _ in range(1):
+for _ in range(100):
     persona = Persona()
 
-    interview = create_interview_data(persona.to_json(), interview_guide)
+    interview = create_interview_data(persona.to_json(), interview_engine)
     formatted_interview = format_interview(persona.to_json(), interview)
 
-    with open(f'./{persona.first_name}_{persona.last_name}', 'w', encoding='utf-8') as file:
+    with open(f'./output/{persona.first_name}_{persona.last_name}', 'w', encoding='utf-8') as file:
         file.write(formatted_interview)
 
-    # Write to database
-    # mongo.write_interview_to_mongo(persona.to_json(), formatted_interview)
+    write_interview_to_mongo(persona.to_json(), formatted_interview)
+

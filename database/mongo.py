@@ -1,27 +1,9 @@
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
-import json
 
-uri = ("mongodb+srv://personas:Iloveourcatsverymuch1975@self-creator.7zs64.mongodb.net/?retryWrites"
-       "=true&w"
-       "=majority&appName=personcreator")
+uri = "mongodb+srv://personas:Iloveourcatsverymuch1975@persona-creator.7zs64.mongodb.net/?retryWrites=true&w=majority&appName=persona-creator"
 
-
-def write_persona_to_mongo(self):
-    client = MongoClient(uri, server_api=ServerApi('1'))
-
-    try:
-        mydb = client['personas_project']
-        mycol = mydb['personas']
-        id = mycol.insert_one(persona)
-        return id
-
-    except Exception as e:
-        print(e)
-        return None
-
-
-def write_interview_to_mongo(self, interview):
+def write_interview_to_mongo(persona, interview):
     client = MongoClient(uri, server_api=ServerApi('1'))
 
     interview_data = {

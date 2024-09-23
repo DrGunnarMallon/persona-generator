@@ -1,7 +1,7 @@
 import random
 
 _personality = {
-    "openness_to_experience": [
+    "openness to experience": [
         "conventional", "practical", "narrow-minded", "routine-oriented", "traditional", "concrete", "unimaginative", "curious", "creative", "adventurous", "innovative", "artistic",
         "intellectual", "abstract", "experimental"
     ],
@@ -20,22 +20,22 @@ _personality = {
     "neuroticism": [
         "calm", "composed", "stable", "resilient", "confident", "anxious", "moody", "sensitive", "insecure", "temperamental", "self-doubting", "worrying", "emotional", "volatile", "vulnerable"
     ],
-    "humor_style": [
+    "humor style": [
         "dry", "sarcastic", "witty", "deadpan", "self-deprecating", "goofy", "slapstick", "pun-loving", "satirical", "dark"
     ],
-    "decision_making": [
+    "decision making": [
         "impulsive", "intuitive", "analytical", "cautious", "deliberate", "decisive", "indecisive", "rational", "emotional", "collaborative"
     ],
-    "communication_style": [
+    "communication style": [
         "direct", "indirect", "verbose", "concise", "assertive", "passive", "diplomatic", "blunt", "eloquent", "taciturn"
     ],
-    "time_orientation": [
-        "present-focused", "future-oriented", "past-dwelling", "punctual", "procrastinating", "spontaneous", "planful", "deadline-driven", "flexible", "rigid"
+    "time orientation": [
+        "present focused", "future oriented", "past dwelling", "punctual", "procrastinating", "spontaneous", "planful", "deadline driven", "flexible", "rigid"
     ],
-    "risk_tolerance": [
+    "risk tolerance": [
         "conservative", "cautious", "risk-averse", "prudent", "daring", "adventurous", "thrill-seeking", "reckless", "calculated", "bold"
     ],
-    "empathy_level": [
+    "empathy level": [
         "compassionate", "sympathetic", "sensitive", "understanding", "detached", "aloof", "indifferent", "cold", "empathetic", "nurturing"
     ],
     "adaptability": [
@@ -47,10 +47,7 @@ _personality = {
     "worldview": [
         "optimistic", "pessimistic", "realistic", "idealistic", "cynical", "hopeful", "skeptical", "trusting", "paranoid", "pragmatic"
     ],
-    "learning_style": [
-        "visual", "auditory", "kinesthetic", "theoretical", "practical", "self-directed", "collaborative", "experiential", "analytical", "intuitive"
-    ],
-    "emotional_intelligence": [
+    "emotional intelligence": [
         "oblivious", "detached", "blunt", "indifferent", "insensitive", "emotionally aware", "perceptive", "empathetic", "intuitive", "socially attuned", "emotionally supportive"
     ],
     "resilience": [
@@ -65,7 +62,7 @@ _personality = {
     "patience": [
         "short-tempered", "irritable", "restless", "hasty", "impatient", "calm", "understanding", "composed", "enduring", "tolerant", "relaxed"
     ],
-    "self_confidence": [
+    "self confidence": [
         "self-conscious", "insecure", "timid", "self-doubting", "unsure", "bold", "fearless", "confident", "self-assured", "self-reliant"
     ],
     "gratitude": [
@@ -89,9 +86,10 @@ def get_personality():
 
 def get_personality_string(characteristics):
     if characteristics:
-        return_string = ""
+        return_string = "Respond like someone with the following personality traits would do: "
         for key, value in characteristics.items():
-            return_string += f"Your personality is made up of the following characteristics. With regard to {key}, you are {value}. You responses should reflect your personality."
+            return_string += f"With regard to {key}, you are {value}. "
+        return_string += "Make sure that you responses reflect your personality."
         return return_string
     else:
         return None
