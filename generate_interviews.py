@@ -5,9 +5,8 @@ from llm.llm import create_interview_data
 from database.mongo import write_interview_to_mongo
 
 
-interview_engine = InterviewGuideEngine('prompts/interview_guide.json')
-
-for _ in range(100):
+for _ in range(300):
+    interview_engine = InterviewGuideEngine('prompts/interview_guide.json')
     persona = Persona()
 
     interview = create_interview_data(persona.to_json(), interview_engine)
